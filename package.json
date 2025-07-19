@@ -2,6 +2,7 @@
   "name": "quadlet-lsp",
   "displayName": "Podman Quadlet languge server",
   "description": "Language server for Podman Quadlet",
+  "publisher": "onlyati",
   "repository": {
     "type": "git",
     "url": "https://github.com/onlyati/quadlet-lsp-vscode-extension"
