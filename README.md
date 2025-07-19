@@ -4,6 +4,9 @@ This is an implementation of language server for
 [Podman Quadlet](https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html#description)
 files.
 
+During the first activation, the LSP is downloaded from the
+[repository](https://github.com/onlyati/quadlet-lsp).
+
 ## Features
 
 Following features are currently available:
@@ -15,12 +18,10 @@ Following features are currently available:
 - Hover menu
 - Implemented "go definition" and "go references" functions
 
-![overall_demo](./assets/overall_demo.gif)
+For more details and demo, please check the
+[onlyati/quadlet-lsp](https://github.com/onlyati/quadlet-lsp) repository.
 
 ## Requirements
-
-Download the latest version of Quadlet LSP, then place into you PATH.
-<https://github.com/onlyati/quadlet-lsp?tab=readme-ov-file#download-the-latest-version>
 
 ## Extension Settings
 

@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/onlyati/quadlet-lsp-vscode-extension"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/unzipper": "^0.10.11",
     "@types/vscode": "^1.102.0",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
@@ -61,6 +62,8 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "tar": "^7.4.3",
+    "unzipper": "^0.12.3",
     "vscode-languageclient": "^9.0.1"
   }
 }
