@@ -15,6 +15,8 @@ Following features are currently available:
 - Hover menu
 - Implemented "go definition" and "go references" functions
 
+![overall_demo](./assets/overall_demo.gif)
+
 ## Requirements
 
 Download the latest version of Quadlet LSP, then place into you PATH.

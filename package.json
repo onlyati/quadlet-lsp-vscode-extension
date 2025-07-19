@@ -1,6 +1,6 @@
 {
   "name": "quadlet-lsp",
-  "displayName": "quadlet-lsp",
+  "displayName": "Podman Quadlet languge server",
   "description": "Language server for Podman Quadlet",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
       {
         "id": "quadlet",
         "aliases": [
-          "Quadlet"
+          "quadlet"
         ],
         "extensions": [
           ".container",
@@ -30,6 +30,13 @@
           ".pod"
         ],
         "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "quadlet",
+        "scopeName": "source.ini",
+        "path": "./syntaxes/ini.tmLanguage.json"
       }
     ]
   },
