@@ -4,7 +4,8 @@ This is an implementation of language server for
 [Podman Quadlet](https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html#description)
 files.
 
-During the first activation, the LSP is downloaded from the
+Language server binaries are bundled together with the extension, but you can
+find it in this repository:
 [repository](https://github.com/onlyati/quadlet-lsp).
 
 ## Features
@@ -17,6 +18,7 @@ Following features are currently available:
     based on real configuration
 - Hover menu
 - Implemented "go definition" and "go references" functions
+- Provide syntax checking
 
 For more details and demo, please check the
 [onlyati/quadlet-lsp](https://github.com/onlyati/quadlet-lsp) repository.
@@ -27,8 +29,16 @@ For more details and demo, please check the
 
 ## Known Issues
 
+For some reason, VS Code does not refresh the diagnostics after
+`.quadletrc.json` file change. After this file change, restart VS Code top apply
+changes.
+
 ## Release Notes
 
-### 0.1.0
+### 0.0.3
+
+Apply and bundle 0.2.0 Quadlet LSP, with its goodies.
+
+### 0.0.2
 
 Initial version

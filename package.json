@@ -7,14 +7,31 @@
     "type": "git",
     "url": "https://github.com/onlyati/quadlet-lsp-vscode-extension"
   },
-  "version": "0.0.2",
+  "files": [
+    "out",
+    "bin",
+    "syntaxes",
+    "language-configuration.json"
+  ],
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.102.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "os": [
+    "win32",
+    "linux",
+    "darwin"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "activationEvents": [
+    "onLanguage:quadlet"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "languages": [
