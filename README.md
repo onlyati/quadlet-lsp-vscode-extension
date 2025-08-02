@@ -35,6 +35,11 @@ changes.
 
 ## Release Notes
 
+### 0.0.4
+
+Fix a bug: language server failed if there was not `.quadletrc.json` file in the
+current working directory.
+
 ### 0.0.3
 
 Apply and bundle 0.2.0 Quadlet LSP, with its goodies.
