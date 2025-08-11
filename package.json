@@ -13,7 +13,7 @@
     "syntaxes",
     "language-configuration.json"
   ],
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -55,6 +55,16 @@
         "language": "quadlet",
         "scopeName": "source.ini",
         "path": "./syntaxes/ini.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "pullAll",
+        "title": "Quadlet: Pull All"
+      },
+      {
+        "command": "listJobs",
+        "title": "Quadlet: List activities"
       }
     ]
   },
