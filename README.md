@@ -18,9 +18,9 @@ Following features are currently available:
     based on real configuration
 - Hover menu
 - Implemented "go definition" and "go references" functions
-- Provide syntax checking
+- Provide syntax checking Provide built-in commands
 
-For more details and demo, please check the
+For more details, documentation and demo, please check the
 [onlyati/quadlet-lsp](https://github.com/onlyati/quadlet-lsp) repository.
 
 ## Requirements
@@ -34,6 +34,35 @@ For some reason, VS Code does not refresh the diagnostics after
 changes.
 
 ## Release Notes
+
+### 0.0.5
+
+#### Features
+
+- New syntax validation: checking container, volume, pod and network name
+  <https://github.com/onlyati/quadlet-lsp/pull/33>
+- Set properties of Podman 5.6.0
+  <https://github.com/onlyati/quadlet-lsp/pull/34>
+- Build files has static completion and new template
+  <https://github.com/onlyati/quadlet-lsp/pull/35>
+- Add completion for `Unit` and `Service` sections and validate automatic
+  dependency translation <https://github.com/onlyati/quadlet-lsp/pull/36>
+- Modify syntax rule, from Podman 5.6.0, environment variable can be specified
+  without value <https://github.com/onlyati/quadlet-lsp/pull/39>
+- Language server listing the exposed ports based on the image. But if image is
+  not pulled, it cannot read. From now it gives an information message if
+  exposed port is not found and could not check all images
+  <https://github.com/onlyati/quadlet-lsp/pull/40>
+- Add new language server commands: list jobs and pull all image
+  <https://github.com/onlyati/quadlet-lsp/pull/41>
+
+#### Bugfixes
+
+- Label, Annotation and Environment variables only accepted one style
+  specification. Syntax check has been updated to accept all possible variation
+  <https://github.com/onlyati/quadlet-lsp/pull/32>
+- Invalid property was checking the commented lines too
+  <https://github.com/onlyati/quadlet-lsp/pull/32>
 
 ### 0.0.4
 
