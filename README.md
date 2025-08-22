@@ -35,7 +35,27 @@ changes.
 
 ## Release Notes
 
+### 0.0.6
+
+Apply <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.3.1>
+
+#### Bugfixes
+
+- The '@' character caused false positive checks in QSR021
+  <https://github.com/onlyati/quadlet-lsp/pull/53>
+- DefaultInstance was missing in Install section
+  <https://github.com/onlyati/quadlet-lsp/pull/53>
+- The value of Exec property can be split to multiple line and multi line was
+  handled individually <https://github.com/onlyati/quadlet-lsp/pull/52>
+- Fix fully qualified syntax checking
+  <https://github.com/onlyati/quadlet-lsp/pull/51>
+
+#### Features
+
 ### 0.0.5
+
+Apply <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.3.0>
+modifications.
 
 #### Features
 
