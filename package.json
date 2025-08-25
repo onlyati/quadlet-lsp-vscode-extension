@@ -45,6 +45,8 @@
           ".volume",
           ".image",
           ".network",
+          ".kube",
+          ".build",
           ".pod"
         ],
         "configuration": "./language-configuration.json"
