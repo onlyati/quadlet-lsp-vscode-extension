@@ -23,6 +23,10 @@ Following features are currently available:
 For more details, documentation and demo, please check the
 [onlyati/quadlet-lsp](https://github.com/onlyati/quadlet-lsp) repository.
 
+> [!INFO]
+>
+> Open your issues/questions in the `onlyati/quadlet-lsp` repository.
+
 ## Requirements
 
 ## Extension Settings
@@ -34,6 +38,33 @@ For some reason, VS Code does not refresh the diagnostics after
 changes.
 
 ## Release Notes
+
+### 0.0.7
+
+Add feature for toggle comment.
+
+Apply <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.4.0>
+
+#### Features
+
+- 3rd party extension for Zed editor (#61)
+- Hover explanation for systemd specifiers (#57)
+- Hover explanation for `UserNS` (#78)
+- Hover explanation for `Volume` (#84)
+- Hover explanation for `Secret` (#85)
+- `QSR022`: validate path with systemd specifier (#57)
+- `QSR023`: validate systemd specifiers (#57)
+- `QSR024`: warn for forbidden properties in `[Service]` (#77)
+- Completion for systemd specifiers (#72)
+- The `go definition` and `go references` works with template files (#75)
+- Rule disabling on file basis (#81)
+
+#### Bugfixes
+
+- `QSR003` pointed the error to the previous line (#64)
+- `QSR021` accept all accept all systemd unit types (#65)
+- `QSR008`, `QSR009`: fix naming convention checking (#66)
+- The `;` also count as valid comment character besides `#` (#76)
 
 ### 0.0.6
 

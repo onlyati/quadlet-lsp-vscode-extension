@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_version="v0.3.1"
+target_version="v0.4.0"
 
 cd ./darwin-amd64
 wget "https://github.com/onlyati/quadlet-lsp/releases/download/${target_version}/quadlet-lsp-${target_version}-darwin-amd64.tar.gz"
