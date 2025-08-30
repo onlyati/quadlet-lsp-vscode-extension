@@ -23,7 +23,7 @@ Following features are currently available:
 For more details, documentation and demo, please check the
 [onlyati/quadlet-lsp](https://github.com/onlyati/quadlet-lsp) repository.
 
-> [!INFO]
+> [!NOTE]
 >
 > Open your issues/questions in the `onlyati/quadlet-lsp` repository.
 
