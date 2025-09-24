@@ -13,7 +13,7 @@
     "syntaxes",
     "language-configuration.json"
   ],
-  "version": "0.0.7",
+  "version": "0.0.8",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -48,6 +48,22 @@
           ".kube",
           ".build",
           ".pod"
+        ],
+        "filenamePatterns": [
+          "**/*.container.d/*.conf",
+          "**/*.container.d/**/*.conf",
+          "**/*.image.d/*.conf",
+          "**/*.image.d/**/*.conf",
+          "**/*.network.d/*.conf",
+          "**/*.network.d/**/*.conf",
+          "**/*.build.d/*.conf",
+          "**/*.build.d/**/*.conf",
+          "**/*.pod.d/*.conf",
+          "**/*.pod.d/**/*.conf",
+          "**/*.volume.d/*.conf",
+          "**/*.volume.d/**/*.conf",
+          "**/*.kube.d/*.conf",
+          "**/*.kube.d/**/*.conf"
         ],
         "configuration": "./language-configuration.json"
       }

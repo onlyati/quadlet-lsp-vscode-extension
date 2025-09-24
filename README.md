@@ -39,6 +39,11 @@ changes.
 
 ## Release Notes
 
+### 0.0.8
+
+Detect dropin files as Quadlet files. Apply
+<https://github.com/onlyati/quadlet-lsp/releases/tag/v0.5.0>
+
 ### 0.0.7
 
 Add feature for toggle comment.
