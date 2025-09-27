@@ -37,7 +37,17 @@ For some reason, VS Code does not refresh the diagnostics after
 `.quadletrc.json` file change. After this file change, restart VS Code top apply
 changes.
 
+The line continuation is not handled from the highlight view. Each line count as
+different definitions, although the language server handle it. Reason of this
+issue that I haven't found a way how I could implement it in VS Code, like I did
+in Neovim.
+
 ## Release Notes
+
+### 0.0.9
+
+New highlight definition. From now the ':', ',', '/' and '=' characters in value
+are highlighted differently so it is easier to read.
 
 ### 0.0.8
 

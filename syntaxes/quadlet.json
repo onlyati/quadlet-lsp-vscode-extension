@@ -1,0 +1,100 @@
+{
+  "name": "Quadlet",
+  "scopeName": "source.quadlet",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#section" },
+    {
+      "name": "meta.key-value.quadlet",
+      "begin": "^\\s*([A-Za-z0-9_.-]+)\\s*(=)",
+      "beginCaptures": {
+        "1": { "name": "variable.other.key.quadlet" },
+        "2": { "name": "keyword.operator.assignment.first.quadlet" }
+      },
+      "end": "(?<!\\\\)$",
+      "contentName": "string.unquoted.value.quadlet",
+      "patterns": [
+        { "include": "#strings" },
+        { "include": "#valueOperators" },
+        {
+          "match": "(\\\\)$",
+          "captures": {
+            "1": { "name": "keyword.operator.continuation.quadlet" }
+          },
+          "name": "meta.line.continuation.quadlet"
+        }
+      ]
+    }
+  ],
+
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "begin": "(^[ \\t]+)?(?=#)",
+          "beginCaptures": {
+            "1": { "name": "punctuation.whitespace.comment.leading.quadlet" }
+          },
+          "end": "(?!\\G)",
+          "patterns": [
+            {
+              "begin": "#",
+              "beginCaptures": {
+                "0": { "name": "punctuation.definition.comment.quadlet" }
+              },
+              "end": "\\n",
+              "name": "comment.line.number-sign.quadlet"
+            }
+          ]
+        },
+        {
+          "begin": "(^[ \\t]+)?(?=;)",
+          "beginCaptures": {
+            "1": { "name": "punctuation.whitespace.comment.leading.quadlet" }
+          },
+          "end": "(?!\\G)",
+          "patterns": [
+            {
+              "begin": ";",
+              "beginCaptures": {
+                "0": { "name": "punctuation.definition.comment.quadlet" }
+              },
+              "end": "\\n",
+              "name": "comment.line.semicolon.quadlet"
+            }
+          ]
+        }
+      ]
+    },
+
+    "section": {
+      "name": "entity.name.section.group-title.quadlet",
+      "match": "^\\s*(\\[)([^\\]]+)(\\])",
+      "captures": {
+        "1": { "name": "punctuation.definition.entity.quadlet" },
+        "3": { "name": "punctuation.definition.entity.quadlet" }
+      }
+    },
+
+    "valueOperators": {
+      "patterns": [
+        {
+          "match": "[:=,/]",
+          "name": "keyword.operator.separator.quadlet"
+        }
+      ]
+    },
+
+    "continuation": {
+      "patterns": [
+        {
+          "match": "(\\\\)\\s*$",
+          "captures": {
+            "1": { "name": "keyword.operator.continuation.quadlet" }
+          },
+          "name": "meta.line.continuation.quadlet"
+        }
+      ]
+    }
+  }
+}

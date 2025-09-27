@@ -13,7 +13,7 @@
     "syntaxes",
     "language-configuration.json"
   ],
-  "version": "0.0.8",
+  "version": "0.0.9",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -71,10 +71,26 @@
     "grammars": [
       {
         "language": "quadlet",
-        "scopeName": "source.ini",
-        "path": "./syntaxes/ini.tmLanguage.json"
+        "scopeName": "source.quadlet",
+        "path": "./syntaxes/quadlet.json"
       }
     ],
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.section.group-title.quadlet",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.operator.assignment.first.quadlet",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        }
+      ]
+    },
     "commands": [
       {
         "command": "pullAll",
