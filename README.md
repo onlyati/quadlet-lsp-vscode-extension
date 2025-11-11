@@ -44,6 +44,34 @@ in Neovim.
 
 ## Release Notes
 
+### 0.0.10
+
+Apply: <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.6.0>
+
+**Features**
+
+- Support Podman v5.7.0 features
+  <https://github.com/onlyati/quadlet-lsp/issues/136>:
+  - Quadlet .container files now support a new key, HttpProxy, to disable the
+    automatic forwarding of HTTP proxy options from the host into the container.
+  - Quadlet .pod files now support a new key, StopTimeout, to configure the stop
+    timeout for the pod
+  - Quadlet .build files now support two new keys, BuildArg and IgnoreFile, to
+    specify build arguments and an ignore file
+  - Implement hover, code completion and starter template for artifact Quadlets.
+  - Implement new rule (QSR026).
+
+**Fixes**
+
+- QSR010 only accepted ports without trailing `/tcp` or `/udp`
+  <https://github.com/onlyati/quadlet-lsp/issues/133>
+- Code completion was also generated in comment lines too
+  <https://github.com/onlyati/quadlet-lsp/issues/122>
+- The `quadlet-lsp check` CLI command wasn't aware of drop-ins directory
+  <https://github.com/onlyati/quadlet-lsp/issues/99>
+- The `PullAll` command wasn't aware of drop-ins directory
+  <https://github.com/onlyati/quadlet-lsp/issues/118>
+
 ### 0.0.9
 
 New highlight definition. From now the ':', ',', '/' and '=' characters in value
