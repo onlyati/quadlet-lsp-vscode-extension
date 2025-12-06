@@ -5,7 +5,7 @@ set -euo pipefail
 # Configuration
 # ------------------------------------------------------------------------------
 target_version="0.6.0"
-target_architectures=("darwin-amd64" "linux-amd64" "linux-arm64" "windows-amd64" "windows-arm64")
+target_architectures=("darwin-amd64" "darwin-arm64" "linux-amd64" "linux-arm64" "windows-amd64" "windows-arm64")
 target_url="https://github.com/onlyati/quadlet-lsp/releases/download/v${target_version}"
 
 # ------------------------------------------------------------------------------
