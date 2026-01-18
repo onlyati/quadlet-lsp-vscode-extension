@@ -44,11 +44,35 @@ in Neovim.
 
 ## Release Notes
 
+### 0.0.11
+
+Apply: <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.7.0>
+
+#### Features
+
+- Support nested directories for each function of languager server
+  (<https://github.com/onlyati/quadlet-lsp/issues/148>)
+- Add protocol suffix support to PublishPort validation
+  (<https://github.com/onlyati/quadlet-lsp/pull/150>)
+- Add warning (instead of just a crash) if not directory is open
+  (<https://github.com/onlyati/quadlet-lsp/pull/165>)
+
+#### Bugfixes
+
+- Add completion item type (e.g.: `Value`, `Keyword`, etc.)
+  (<https://github.com/onlyati/quadlet-lsp/pull/154>)
+- Fix property name for disable rules in documentation
+  (<https://github.com/onlyati/quadlet-lsp/pull/159>)
+- Fix `rshared` flag in QSR15
+  (<https://github.com/onlyati/quadlet-lsp/pull/161>)
+- Property completion did not work if `=` was already in the line
+  (<https://github.com/onlyati/quadlet-lsp/pull/166>)
+
 ### 0.0.10
 
 Apply: <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.6.0>
 
-**Features**
+#### Features
 
 - Support Podman v5.7.0 features
   <https://github.com/onlyati/quadlet-lsp/issues/136>:
@@ -61,7 +85,7 @@ Apply: <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.6.0>
   - Implement hover, code completion and starter template for artifact Quadlets.
   - Implement new rule (QSR026).
 
-**Fixes**
+#### Fixes
 
 - QSR010 only accepted ports without trailing `/tcp` or `/udp`
   <https://github.com/onlyati/quadlet-lsp/issues/133>

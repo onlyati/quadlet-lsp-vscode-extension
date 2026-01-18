@@ -1,133 +1,133 @@
 {
-  "name": "quadlet-lsp",
-  "displayName": "Podman Quadlet languge server",
-  "description": "Language server for Podman Quadlet",
-  "publisher": "onlyati",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/onlyati/quadlet-lsp-vscode-extension"
-  },
-  "files": [
-    "out",
-    "bin",
-    "syntaxes",
-    "language-configuration.json"
-  ],
-  "version": "0.0.10",
-  "engines": {
-    "vscode": "^1.102.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "os": [
-    "win32",
-    "linux",
-    "darwin"
-  ],
-  "cpu": [
-    "x64",
-    "arm64"
-  ],
-  "activationEvents": [
-    "onLanguage:quadlet"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "languages": [
-      {
-        "id": "quadlet",
-        "aliases": [
-          "quadlet"
-        ],
-        "extensions": [
-          ".container",
-          ".volume",
-          ".image",
-          ".network",
-          ".kube",
-          ".build",
-          ".pod",
-          ".artifact"
-        ],
-        "filenamePatterns": [
-          "**/*.container.d/*.conf",
-          "**/*.container.d/**/*.conf",
-          "**/*.image.d/*.conf",
-          "**/*.image.d/**/*.conf",
-          "**/*.network.d/*.conf",
-          "**/*.network.d/**/*.conf",
-          "**/*.build.d/*.conf",
-          "**/*.build.d/**/*.conf",
-          "**/*.pod.d/*.conf",
-          "**/*.pod.d/**/*.conf",
-          "**/*.volume.d/*.conf",
-          "**/*.volume.d/**/*.conf",
-          "**/*.kube.d/*.conf",
-          "**/*.kube.d/**/*.conf",
-          "**/*.artifact.d/*.conf",
-          "**/*.artifact.d/**/*.conf"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "quadlet",
-        "scopeName": "source.quadlet",
-        "path": "./syntaxes/quadlet.json"
-      }
-    ],
-    "editor.tokenColorCustomizations": {
-      "textMateRules": [
-        {
-          "scope": "entity.name.section.group-title.quadlet",
-          "settings": {
-            "fontStyle": "bold"
-          }
-        },
-        {
-          "scope": "keyword.operator.assignment.first.quadlet",
-          "settings": {
-            "fontStyle": "bold"
-          }
-        }
-      ]
+    "name": "quadlet-lsp",
+    "displayName": "Podman Quadlet languge server",
+    "description": "Language server for Podman Quadlet",
+    "publisher": "onlyati",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onlyati/quadlet-lsp-vscode-extension"
     },
-    "commands": [
-      {
-        "command": "pullAll",
-        "title": "Quadlet: Pull All"
-      },
-      {
-        "command": "listJobs",
-        "title": "Quadlet: List activities"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "@types/unzipper": "^0.10.11",
-    "@types/vscode": "^1.102.0",
-    "@typescript-eslint/eslint-plugin": "^8.31.1",
-    "@typescript-eslint/parser": "^8.31.1",
-    "@vscode/test-cli": "^0.0.11",
-    "@vscode/test-electron": "^2.5.2",
-    "eslint": "^9.25.1",
-    "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "tar": "^7.4.3",
-    "unzipper": "^0.12.3",
-    "vscode-languageclient": "^9.0.1"
-  }
+    "files": [
+        "out",
+        "bin",
+        "syntaxes",
+        "language-configuration.json"
+    ],
+    "version": "0.0.11",
+    "engines": {
+        "vscode": "^1.102.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "os": [
+        "win32",
+        "linux",
+        "darwin"
+    ],
+    "cpu": [
+        "x64",
+        "arm64"
+    ],
+    "activationEvents": [
+        "onLanguage:quadlet"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "languages": [
+            {
+                "id": "quadlet",
+                "aliases": [
+                    "quadlet"
+                ],
+                "extensions": [
+                    ".container",
+                    ".volume",
+                    ".image",
+                    ".network",
+                    ".kube",
+                    ".build",
+                    ".pod",
+                    ".artifact"
+                ],
+                "filenamePatterns": [
+                    "**/*.container.d/*.conf",
+                    "**/*.container.d/**/*.conf",
+                    "**/*.image.d/*.conf",
+                    "**/*.image.d/**/*.conf",
+                    "**/*.network.d/*.conf",
+                    "**/*.network.d/**/*.conf",
+                    "**/*.build.d/*.conf",
+                    "**/*.build.d/**/*.conf",
+                    "**/*.pod.d/*.conf",
+                    "**/*.pod.d/**/*.conf",
+                    "**/*.volume.d/*.conf",
+                    "**/*.volume.d/**/*.conf",
+                    "**/*.kube.d/*.conf",
+                    "**/*.kube.d/**/*.conf",
+                    "**/*.artifact.d/*.conf",
+                    "**/*.artifact.d/**/*.conf"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "quadlet",
+                "scopeName": "source.quadlet",
+                "path": "./syntaxes/quadlet.json"
+            }
+        ],
+        "editor.tokenColorCustomizations": {
+            "textMateRules": [
+                {
+                    "scope": "entity.name.section.group-title.quadlet",
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "keyword.operator.assignment.first.quadlet",
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "pullAll",
+                "title": "Quadlet: Pull All"
+            },
+            {
+                "command": "listJobs",
+                "title": "Quadlet: List activities"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.10",
+        "@types/node": "20.x",
+        "@types/unzipper": "^0.10.11",
+        "@types/vscode": "^1.102.0",
+        "@typescript-eslint/eslint-plugin": "^8.31.1",
+        "@typescript-eslint/parser": "^8.31.1",
+        "@vscode/test-cli": "^0.0.11",
+        "@vscode/test-electron": "^2.5.2",
+        "eslint": "^9.25.1",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "tar": "^7.4.3",
+        "unzipper": "^0.12.3",
+        "vscode-languageclient": "^9.0.1"
+    }
 }
