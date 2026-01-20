@@ -44,6 +44,15 @@ in Neovim.
 
 ## Release Notes
 
+### 0.0.12
+
+Apply: <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.7.1>
+
+#### Bugfixes
+
+- Completion crashes when previous line is empty
+  (<https://github.com/onlyati/quadlet-lsp/pull/172>)
+
 ### 0.0.11
 
 Apply: <https://github.com/onlyati/quadlet-lsp/releases/tag/v0.7.0>
