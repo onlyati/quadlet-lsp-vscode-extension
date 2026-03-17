@@ -24,15 +24,15 @@ done
 # ------------------------------------------------------------------------------
 for arch in "${target_architectures[@]}"; do
   # If the directory does not exist, we create it
-  if [ ! -d "./${arch}" ]; then
-    mkdir "./${arch}"
+  if [ ! -d "./bin/${arch}" ]; then
+    mkdir "./bin/${arch}"
   fi
 
   # We use a sub-shell to change the directory context for each architecture
   (
-    cd "./${arch}" || {
+    cd "./bin/${arch}" || {
       # We handle the case where changing directory fails to prevent issues.
-      echo "Failed to change directory to ./${arch}"
+      echo "Failed to change directory to ./bin/${arch}"
       exit 1
     }
 
