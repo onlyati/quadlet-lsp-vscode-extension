@@ -120,14 +120,14 @@
         "@types/vscode": "^1.102.0",
         "@typescript-eslint/eslint-plugin": "^8.31.1",
         "@typescript-eslint/parser": "^8.31.1",
-        "@vscode/test-cli": "^0.0.11",
+        "@vscode/test-cli": "^0.0.15",
         "@vscode/test-electron": "^2.5.2",
-        "eslint": "^9.25.1",
+        "eslint": "^10.8.0",
         "typescript": "^5.8.3"
     },
     "dependencies": {
         "tar": "^7.5.16",
         "unzipper": "^0.12.3",
-        "vscode-languageclient": "^9.0.1"
+        "vscode-languageclient": "^10.1.0"
     }
 }
