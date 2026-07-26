@@ -62,6 +62,7 @@ export async function activate(context: vscode.ExtensionContext) {
       documentSelector: [{ scheme: "file", language: "quadlet" }],
       outputChannel: vscode.window.createOutputChannel(
         "Quadlet Language Server",
+        { log: true },
       ),
     };
 
