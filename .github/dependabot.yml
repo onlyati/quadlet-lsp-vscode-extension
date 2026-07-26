@@ -4,9 +4,9 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-versioning-strategy: increase
 updates:
-  - package-ecosystem: ""
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
+    versioning-strategy: increase
