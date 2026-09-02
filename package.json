@@ -122,7 +122,7 @@
         "@typescript-eslint/parser": "^8.66.0",
         "@vscode/test-cli": "^0.0.15",
         "@vscode/test-electron": "^3.1.0",
-        "eslint": "^10.9.0",
+        "eslint": "^10.9.1",
         "typescript": "^7.0.2"
     },
     "dependencies": {
