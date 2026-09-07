@@ -121,9 +121,9 @@
         "@typescript-eslint/eslint-plugin": "^8.69.0",
         "@typescript-eslint/parser": "^8.68.0",
         "@vscode/test-cli": "^0.0.15",
-        "@vscode/test-electron": "^3.1.0",
-        "eslint": "^10.9.1",
-        "typescript": "^7.0.2"
+        "@vscode/test-electron": "^2.5.2",
+        "eslint": "^10.8.0",
+        "typescript": "^5.8.3"
     },
     "dependencies": {
         "tar": "^7.5.16",
