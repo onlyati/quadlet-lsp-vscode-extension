@@ -1,5 +1,6 @@
 {
     "name": "quadlet-lsp",
+    "private": true,
     "displayName": "Podman Quadlet languge server",
     "description": "Language server for Podman Quadlet",
     "publisher": "onlyati",
@@ -114,7 +115,8 @@
         "lint": "eslint src",
         "test": "vscode-test",
         "bundle": "esbuild src/extension.ts --bundle --platform=node --format=cjs --external:vscode --minify --sourcemap --outfile=out/extension.js",
-        "package": "vsce package --no-dependencies"
+        "package": "vsce package --no-dependencies",
+        "publish": "vsce publish --no-dependencies"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.10",
