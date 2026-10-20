@@ -15,7 +15,7 @@
         "language-configuration.json",
         "LICENSE"
     ],
-    "version": "0.0.20",
+    "version": "0.0.21",
     "engines": {
         "vscode": "^1.102.0"
     },
