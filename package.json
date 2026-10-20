@@ -1,5 +1,6 @@
 {
     "name": "quadlet-lsp",
+    "private": true,
     "displayName": "Podman Quadlet languge server",
     "description": "Language server for Podman Quadlet",
     "publisher": "onlyati",
@@ -11,7 +12,8 @@
         "out",
         "bin",
         "syntaxes",
-        "language-configuration.json"
+        "language-configuration.json",
+        "LICENSE"
     ],
     "version": "0.0.20",
     "engines": {
@@ -106,28 +108,30 @@
         ]
     },
     "scripts": {
-        "vscode:prepublish": "sh ./bin/download.sh && npm run compile",
+        "vscode:prepublish": "sh ./bin/download.sh && npm run compile && npm run bundle",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
         "lint": "eslint src",
-        "test": "vscode-test"
+        "test": "vscode-test",
+        "bundle": "esbuild src/extension.ts --bundle --platform=node --format=cjs --external:vscode --minify --sourcemap --outfile=out/extension.js",
+        "package": "vsce package --no-dependencies",
+        "publish": "vsce publish --no-dependencies"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.10",
         "@types/node": "26.x",
-        "@types/unzipper": "^0.10.11",
         "@types/vscode": "^1.102.0",
         "@typescript-eslint/eslint-plugin": "^8.71.2",
         "@typescript-eslint/parser": "^8.68.0",
         "@vscode/test-cli": "^0.0.15",
         "@vscode/test-electron": "^3.1.0",
+        "@vscode/vsce": "^4.0.0",
+        "esbuild": "^0.28.2",
         "eslint": "^10.13.0",
         "typescript": "^5.8.3"
     },
     "dependencies": {
-        "tar": "^7.5.16",
-        "unzipper": "^0.12.3",
         "vscode-languageclient": "^10.1.2"
     }
 }
