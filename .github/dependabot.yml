@@ -14,6 +14,9 @@ updates:
     labels:
       - "dependencies"
       - "javascript"
+    ignore:
+      # Must stay in line with engines.vscode in package.json
+      - dependency-name: "@types/vscode"
     groups:
       dev-minor-patch:
         dependency-type: "development"
