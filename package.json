@@ -113,7 +113,8 @@
         "pretest": "npm run compile && npm run lint",
         "lint": "eslint src",
         "test": "vscode-test",
-        "bundle": "esbuild src/extension.ts --bundle --platform=node --format=cjs --external:vscode --minify --sourcemap --outfile=out/extension.js"
+        "bundle": "esbuild src/extension.ts --bundle --platform=node --format=cjs --external:vscode --minify --sourcemap --outfile=out/extension.js",
+        "package": "vsce package --no-dependencies"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.10",
@@ -123,6 +124,7 @@
         "@typescript-eslint/parser": "^8.68.0",
         "@vscode/test-cli": "^0.0.15",
         "@vscode/test-electron": "^3.1.0",
+        "@vscode/vsce": "^4.0.0",
         "esbuild": "^0.28.2",
         "eslint": "^10.13.0",
         "typescript": "^5.8.3"
