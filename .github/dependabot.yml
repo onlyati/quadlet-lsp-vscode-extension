@@ -17,6 +17,9 @@ updates:
     ignore:
       # Must stay in line with engines.vscode in package.json
       - dependency-name: "@types/vscode"
+      # TypeScript 6 needs tsconfig changes (no implicit @types/node); revisit manually
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     groups:
       dev-minor-patch:
         dependency-type: "development"
